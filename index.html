@@ -1,65 +1,446 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psyque Diária - Saúde Mental</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psyque Diária</title>
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <header>
-    <h1>Psyque Diária</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Página Inicial</a></li>
-        <li><a href="#">Artigos</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-      <div class="user-icons">
-        <a href="#"><i class="fas fa-user-plus"></i></a>
-        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
-      </div>
+    
+
+<!-- header section starts  -->
+
+<header>
+
+<div class="container">
+
+    <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#facility">facility</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#post">post</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <h2>Bem-vindo ao Psyque Diária!</h2>
-      <p>Aqui você encontrará informações e recursos relacionados à saúde mental.</p>
+    <div class="fas fa-bars"></div>
+
+</div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="container">
+
+    <div class="flex text-center text-md-left">
+
+        <div class="image" data-aos="zoom-in">
+            <img src="images/home-img.svg" width="100%" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-left">
+            <h1><span>stay</span> safe, <span>stay</span> healthy.</h1>
+            <h3>caring for you.</h3>
+            <a href="#"><button class="button">learn more</button></a>
+        </div>
+
     </div>
-  </section>
 
-  <section class="video-carousel">
-    <h2>Assista nossos Vídeos!</h2>
-    <div class="carousel">
-      <div class="slide">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="slide">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="slide">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/video3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+</div>
+
+</section>
+
+
+<!-- home section ends -->
+
+<!-- about section start  -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+    <div class="row py-5 align-items-center">
+
+        <div class="col-md-6 content" data-aos="fade-right">
+
+            <div class="box">
+                <h3> <i class="fas fa-ambulance"></i> ambulance services </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod deserunt harum iste voluptatum magnam.</p>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-procedures"></i> emergency rooms </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod deserunt harum iste voluptatum magnam.</p>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-stethoscope"></i> free check-ups </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod deserunt harum iste voluptatum magnam.</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 d-none d-md-block" data-aos="fade-left">
+            <img src="images/about-img.png" width="100%" alt="">
+        </div>
+
     </div>
-  </section>
 
-  <section>
-    <h2>Artigos Relacionados</h2>
-    <ul>
-      <li><a href="#">Conheça nosso trabalho e nossa equipe!!</a></li>
-      <li><a href="#">Como lidar com o estresse no trabalho</a></li>
-      <li><a href="#">Dicas para melhorar a qualidade do sono</a></li>
-      <li><a href="#">O impacto da alimentação na saúde mental</a></li>
-    </ul>
-  </section>
+</div>
 
-  <footer>
-    <p>&copy; 2023 Psyque Diária. Todos os direitos reservados.</p>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<!-- about section ends -->
+
+<!-- facility section starts  -->
+
+<section class="facility" id="facility">
+
+<div class="container">
+
+<h1 class="heading"><span>'</span> our facilities <span>'</span></h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img1.jpg" title="our team">
+            <img src="images/img1.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img2.jpg" title="our lab">
+            <img src="images/img2.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img3.jpg" title="emergency rooms">
+            <img src="images/img3.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img4.jpg" title="expert doctors">
+            <img src="images/img4.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img5.jpg" title="expert doctors">
+            <img src="images/img5.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img6.jpg" title="emergency rooms">
+            <img src="images/img6.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img7.jpg" title="expert doctors">
+            <img src="images/img7.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img8.jpg" title="emergency rooms">
+            <img src="images/img8.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="images/img9.jpg" title="enough beds">
+            <img src="images/img9.jpg" alt="">
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- facility section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<div class="container">
+
+<h1 class="heading"><span>'</span> people's review <span>'</span></h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="fade-right">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque.</p>
+        <h3>someone's name</h3>
+        <span>jan 5, 2021</span>
+        <img src="images/pic-1.png" alt="">
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque.</p>
+        <h3>someone's name</h3>
+        <span>jan 7, 2021</span>
+        <img src="images/pic-2.png" alt="">
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque.</p>
+        <h3>someone's name</h3>
+        <span>jan 10, 2021</span>
+        <img src="images/pic-3.png" alt="">
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- review section ends  -->
+
+<!-- counter section starts  -->
+
+<section class="counter">
+
+    <div class="container">
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-hospital"></i>
+                <span>120+</span>
+                <h3>Hospitals</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-users"></i>
+                <span>100+</span>
+                <h3>staff</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-smile"></i>
+                <span>1200+</span>
+                <h3>happy patients</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-procedures"></i>
+                <span>130+</span>
+                <h3>bed facility</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- counter section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <h1 class="heading"><span>'</span> make an appointment <span>'</span></h1>
+
+            <div class="col-md-10" data-aos="flip-down">
+
+                <form action="">
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="full name">
+                        <input type="number" placeholder="phone">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" placeholder="your email">
+                        <select name="" id="">
+                            <option value="" disabled selected>make an appointment</option>
+                            <option value="09-11 am">09-11 am</option>
+                            <option value="11-03 pm">11-03 pm</option>
+                            <option value="03-06 pm">03-06 pm</option>
+                            <option value="06-09 pm">06-09 pm</option>
+                        </select>
+                    </div>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message ( optional )"></textarea>
+
+                    <input type="submit" name="" id="" value="make appointment" class="button">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- post section starts  -->
+
+<section class="post" id="post">
+
+    <div class="container">
+
+        <h1 class="heading"><span>'</span> out posts <span>'</span></h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-right">
+                <img src="images/img2.jpg" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, optio nemo. Sit debitis excepturi ratione?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="images/img4.jpg" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, optio nemo. Sit debitis excepturi ratione?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <img src="images/img5.jpg" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, optio nemo. Sit debitis excepturi ratione?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- post section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+    <section class="container">
+
+        <div class="row">
+
+            <div class="col-md-4" data-aos="fade-right">
+                <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum natus, alias ea voluptatem quisquam?</p>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="fade-up">
+                <h3>links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">facility</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+                <a href="#">post</a>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="fade-left">
+                <h3>share</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">github</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h1 class="credit text-center mx-auto">created by <span>Psyque Diária</span> | all rights reserved.</h1>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js link  -->
+<script src="js/main.js"></script>
+
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:200
+});
+
+</script>
+
 </body>
 </html>
