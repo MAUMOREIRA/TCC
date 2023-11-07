@@ -19,9 +19,9 @@ CREATE TABLE post(
     usuario_id int NOT NULL,
     data_criacao datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     data_postagem datetime NOT NULL,
+    link_imagem text not null,
     PRIMARY KEY (id),
     CONSTRAINT fk_post_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id)
-
 );
 
 CREATE TABLE comentario(
@@ -42,20 +42,8 @@ CREATE TABLE video(
     titulo varchar(255) NOT NULL,
     data_criacao datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     data_postagem datetime NOT NULL,
-    nome_video varchar(100) NOT NULL,
+    nome varchar(100) NOT NULL,
+    link varchar(255) NOT NULL,
     PRIMARY KEY (id),    
     CONSTRAINT fk_video_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id)
-
-);
-
-CREATE TABLE podcast(
-    id int NOT NULL AUTO_INCREMENT,
-    titulo varchar(255) NOT NULL,
-    usuario_id int NOT NULL,
-    data_criacao datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    data_postagem datetime NOT NULL,
-    nome_ varchar(100) NOT NULL,
-    PRIMARY KEY (id),  
-    CONSTRAINT fk_podcast_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id)
-
 );
