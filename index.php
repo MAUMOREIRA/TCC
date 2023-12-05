@@ -218,7 +218,6 @@
                                     <a href="/TCC/post-details.php?id=${post.id}">
                                         <h3>${post.titulo}</h3>
                                     </a>
-                                    <p>${(post.texto ?? '').substring(0, 50)}</p>
                                     <a href="/TCC/post-details.php?id=${post.id}">
                                         <button class="button">Saiba Mais</button>
                                     </a>
