@@ -1,0 +1,8 @@
+.post {
+  padding-top: 8rem;
+}
+
+#post-container {
+  font-size: 16px;
+  flex-direction: column;
+}

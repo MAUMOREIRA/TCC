@@ -514,8 +514,6 @@ input:-webkit-autofill
     }
 }
 
-
-
-
-
-
+#registrar-message {
+    color: red;
+}
