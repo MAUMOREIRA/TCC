@@ -117,7 +117,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- custom js link  -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 
 
     <script>

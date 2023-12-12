@@ -18,10 +18,10 @@
           <?php
           if (isset($_SESSION['usuario.nome'])) {
             echo "<strong style=\" padding-right: 15px;\">" . $_SESSION['usuario.nome'] . "</strong>";
-            echo "<button style=\"background-color: #0188DF; color: white; border: 2px; 
+            echo "<button class=\"h3\" style=\"background-color: #0188DF; color: white; border: 2px; 
             padding: 10px 20px; text-align: center; 
             text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; 
-            cursor: pointer; border-radius: 5px; \" onclick=\"logout()\"><h3>Sair</h3></button>";
+            cursor: pointer; border-radius: 5px; \" onclick=\"logout()\">Sair</button>";
           } else { ?>
             <a href="/TCC/cadastro.php#entrar">Login</a>
           <?php } ?>

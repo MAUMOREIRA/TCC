@@ -328,26 +328,27 @@ header .fa-bars{
   color:#666;
 }
 
-.contact{
+.contact, .comentario {
   background:var(--black);
 }
 
-.contact .heading{
+.contact .heading, .comentario .heading {
   color:#fff;
 }
 
-.contact form{
+.contact form, .comentario form {
   text-align: center;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 
-.contact form .inputBox{
+.contact form .inputBox, .comentario form .inputBox{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contact form .inputBox input, select{
+.contact form .inputBox input, select,
+.comentario form .inputBox input {
   height: 4rem;
   width:49%;
   padding:.5rem 1rem;
@@ -357,7 +358,8 @@ header .fa-bars{
   text-transform: none;
 }
 
-.contact form textarea{
+.contact form textarea,
+.comentario form textarea {
   height:20rem;
   resize: none;
   padding:1rem;
@@ -367,11 +369,13 @@ header .fa-bars{
   text-transform: none;
 }
 
-.contact form input[type="submit"]{
+.contact form input[type="submit"],
+.comentario form input[type="submit"]{
   width:20rem;
 }
 
-.contact form input[type="submit"]:hover{
+.contact form input[type="submit"]:hover,
+.comentario form input[type="submit"]:hover{
   background:var(--black);
 }
 

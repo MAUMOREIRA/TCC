@@ -6,3 +6,9 @@
   font-size: 16px;
   flex-direction: column;
 }
+
+.comentario {
+  font-size: medium;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}

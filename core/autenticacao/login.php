@@ -20,6 +20,7 @@ try {
     throw new Exception('Usuário não encontrado');
   }
 
+  echo json_encode($retorno);
   // TODO: Verificar se a senha confere
 
   $_SESSION["usuario.nome"] = $retorno['nome'];
@@ -29,5 +30,5 @@ try {
   echo json_encode($retorno);
 } catch (Exception $e) {
   error_log($e);
-  echo 'Caught exception: ',  $e->getMessage(), "\n";
+  throw $e;
 }

@@ -4,6 +4,7 @@ require_once '../../mysql.php';
 // Parametros
 $limit = $_GET['limit'] ?? null;
 $offset = $_GET['offset'] ?? null;
+$post_id = $_GET['post_id'] ?? null;
 
 try {
   // Busca no banco
@@ -15,7 +16,8 @@ try {
               from usuario
               where usuario.id = comentario.usuario_id) as "usuario.nome"'
     ],
-    [],
+    isset($post_id) ? [['post_id','=',$post_id]] : []
+    ,
     'data_criacao DESC',
     $limit,
     $offset

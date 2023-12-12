@@ -72,7 +72,7 @@
                             setTimeout(() => {
                                 location.pathname = '/TCC/index.php';
                             }, 1000)
-                            
+
                         } catch (err) {
                             message.innerHTML = 'Erro ao cadastrar!'
                             console.warn(err)
@@ -128,6 +128,10 @@
                                     body: loginForm
                                 }
                             )
+
+                            if (result.status != 200) {
+                                throw await result.json()
+                            }
 
                             login_message.innerHTML = 'Login com sucesso!'
 
