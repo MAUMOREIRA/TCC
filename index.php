@@ -177,7 +177,7 @@
                             try {
                                 // Criar link e clicar para abrir o email
                                 const anchorTag = document.createElement('a');
-                                anchorTag.href = `mailto:${document.getElementById('email').value}?body=${document.getElementById('mensagem').value}&subject=PsyqueDiária`;
+                                anchorTag.href = `mailto:${document.getElementById('carmen.correa@ifsp.edu.br').value}?body=${document.getElementById('mensagem').value}&subject=PsyqueDiária`;
                                 anchorTag.target = '_blank';
                                 anchorTag.click();
 
