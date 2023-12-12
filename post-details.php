@@ -54,6 +54,7 @@
         </form>
 
         <script>
+          // Mesmo processo dos formulários do login
           const comentario_form = document.getElementById('comentario-form')
           const message = document.getElementById('comentario-message')
 
@@ -89,7 +90,7 @@
     </section>
   <?php } ?>
 
-  <section class="review" id="review">
+  <!-- <section class="review" id="review">
 
     <div class="container">
 
@@ -126,7 +127,7 @@
       <div id="comments-container" class="box-container"></div>
     </div>
 
-  </section>
+  </section> -->
 
   <!-- post section ends -->
 
@@ -147,20 +148,30 @@
       delay: 200
     });
 
+    // Carrega o post
     async function loadPosts(id) {
       const postStream = await fetch(`/TCC/core/repositorio/post/get.php?id=${id}`);
 
+      // Busca as divs que serão populadas com os dados
       const post_title = document.querySelector("#post-title"),
         post_container = document.querySelector("#post-container"),
         postData = await postStream.json();
 
+      //  Popula as divs com o dado que foi carregado
+      /* Apagar isso depois...
+      Obs: o innerHTML vai adicionar o conteúdo da div (ou qualquer outra tag) como se fosse HTML msm. 
+      Tipo, se somente adicionar dentro da tag vai ser lido como texto corrido, mas se setarmos como innerHTML
+      esse conteúdo é renderizado msm. Então vc injeta um HTML nele msm que vai ser renderizado
+      */ 
       post_title.innerHTML = postData.titulo
       post_container.innerHTML = postData.texto
     }
 
+    // Faz a serialização dos parametros da url, assim conseguimos pegar cada parametro de lá
     const [url, query] = location.href.split('?')
     const params = query ? new URLSearchParams(`${query}`) : {};
 
+    // Se não houver o parametro id, voltar para a página principal
     if (!params.has('id')) {
       location.href = '/TCC/index.php'
     } else {

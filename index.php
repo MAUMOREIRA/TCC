@@ -57,11 +57,13 @@
             <h1 class="heading">Vídeos <span>&</span> Podcasts</h1>
 
             <script>
+                // Função para o carregamento dos vídeos
                 async function loadVideos() {
                     const videos = await fetch('/TCC/core/repositorio/video/listar.php?limit=6');
 
                     const videos_container = document.querySelector("#videos-container");
 
+                    //  Para cada vídeo retornado, adicionar na tela
                     for (let video of (await videos.json())) {
 
                         const video_div = document.createElement('div')
@@ -74,9 +76,11 @@
                     }
                 }
 
+                // Carregar os vídeos
                 loadVideos();
             </script>
 
+            <!-- Div a ser populada com o conteúdo dos vídeos -->
             <div id="videos-container" class="box-container"></div>
 
         </div>
@@ -171,7 +175,7 @@
                             e.preventDefault()
 
                             try {
-
+                                // Criar link e clicar para abrir o email
                                 const anchorTag = document.createElement('a');
                                 anchorTag.href = `mailto:${document.getElementById('email').value}?body=${document.getElementById('mensagem').value}&subject=PsyqueDiária`;
                                 anchorTag.target = '_blank';

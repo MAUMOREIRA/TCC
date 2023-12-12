@@ -41,7 +41,7 @@
             <div class="flex text-center text-md-left">
 
                 <div class="image" data-aos="zoom-in">
-                    <img src="..\TCC\img\Psyque.png" width="100%" alt="">
+                    <img src="/TCC/img/Psyque.png" width="100%" alt="">
                 </div>
 
                 <div class="content" data-aos="fade-left">
@@ -91,7 +91,8 @@
 
             <!-- <div class="flex text-center text-md-right">
             <div class="image" data-aos="fade-right">
-                <img src="..\TCC\img\Psyque.png" width="30%" alt="">
+                <img src="/TCC/img/Psyque.png" width="30%" alt="">
+                Essa barra invertida é padrão Windows. Web precisa ser a barra normal msm
             </div>
         </div> -->
 

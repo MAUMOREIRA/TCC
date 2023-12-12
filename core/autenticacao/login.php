@@ -20,7 +20,6 @@ try {
     throw new Exception('Usuário não encontrado');
   }
 
-  echo json_encode($retorno);
   // TODO: Verificar se a senha confere
 
   $_SESSION["usuario.nome"] = $retorno['nome'];

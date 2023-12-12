@@ -52,13 +52,15 @@
                         e.preventDefault()
 
                         try {
-
+                            // Conteúdo a ser enviado na requisição
                             const usuarioForm = new FormData()
 
+                            // Popular com os dados informados no form
                             usuarioForm.append("nome", e.target.elements["nome"].value)
                             usuarioForm.append("email", e.target.elements["email"].value)
                             usuarioForm.append("senha", e.target.elements["senha"].value)
 
+                            // Envio para o servidor
                             const result = await fetch(
                                 '/TCC/core/repositorio/usuario/criar.php', {
                                     method: 'POST',
@@ -66,14 +68,21 @@
                                 }
                             )
 
+                            // Se o resultado não tiver código de sucesso (200), lançar exception
+                            if (result.status != 200) {
+                                throw await result.json()
+                            }
+
                             console.log(await result.json())
                             message.innerHTML = 'Cadastrado com sucesso!'
 
+                            // Aguarda por 1s antes do redirecionamento para o index
                             setTimeout(() => {
                                 location.pathname = '/TCC/index.php';
                             }, 1000)
 
                         } catch (err) {
+                            // Quando acontece algum erro, mostra a mensagem que deu erro
                             message.innerHTML = 'Erro ao cadastrar!'
                             console.warn(err)
                         }
@@ -129,8 +138,10 @@
                                 }
                             )
 
-                            if (result.status != 200) {
-                                throw await result.json()
+                            const response = await result.json()
+
+                            if (!response) {
+                                throw 'Usuário não encontrado'
                             }
 
                             login_message.innerHTML = 'Login com sucesso!'
